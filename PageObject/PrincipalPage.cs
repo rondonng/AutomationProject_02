@@ -10,8 +10,6 @@ namespace AutomationProject_02.PageObject
 {
     public class PrincipalPage : BasePage
     {
-        // Selenium driver : heredado de la clase BasePage
-
         // Localizadores. Elementos de la pagina
         protected string loggedInAsXPath = "//i[@class='fa fa-user']";
 

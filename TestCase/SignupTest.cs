@@ -14,11 +14,6 @@ namespace AutomationProject_02.TestCase
     [TestFixture]
     public class SignupTest : BaseTest
     {
-        /* 
-         * Selenium Driver : heredado de la clase BaseTest
-         * [SetUp] : heredado de la clase BaseTest 
-        */
-
         // Metodo que implementa el caso de prueba de registrarse. Resultado esperado que el usuario se redireccione al formulario de registro correctamente
         [Test]
         public void SuccessfulSignupTest()
@@ -28,7 +23,5 @@ namespace AutomationProject_02.TestCase
 
             Assert.IsTrue(_signupPage.FormIsPresent());
         }
-
-        // [TaerDown] : heredado de la clase BaseTest
     }
 }

@@ -11,11 +11,6 @@ namespace AutomationProject_02.TestCase
     // Clase que contiene los casos de prueba del login
     public class LoginTest : BaseTest
     {
-        /* 
-         * Selenium Driver : heredado de la clase BaseTest
-         * [SetUp] : heredado de la clase BaseTest 
-        */
-
         // Metodo que implementa el caso de prueba de registrarse. Resultado esperado que el usuario se redireccione al formulario de registro correctamente
         [Test]
         public void SuccessfulLoginTest()

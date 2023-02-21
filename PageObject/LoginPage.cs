@@ -10,8 +10,6 @@ namespace AutomationProject_02.PageObject
     // Clase para representar la pagina de Login
     public class LoginPage : BasePage
     {
-        // Selenium driver : heredado de la clase BasePage
-
         // Localizadores. Elementos de la pagina
         // Login to your account
         protected string loginTitleXPath = "//div[@class='login-form']/h2";
