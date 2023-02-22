@@ -21,7 +21,21 @@ namespace AutomationProject_02.TestCase
             LoginPage signupPage = new LoginPage(Driver);
             SignupPage _signupPage = signupPage.SignupAs("nels", "nels@mail.com");
 
-            Assert.IsTrue(_signupPage.FormIsPresent());
+            Assert.IsTrue(_signupPage.FormIsPresentSignup());
+        }
+
+        // Metodo para crear una nueva cuenta. Retorna a la pagina cuenta creada
+        [Test]
+        public void SuccessAccountCreatTest()
+        {
+            LoginPage signupPage = new LoginPage(Driver);
+            SignupPage _signupPage = signupPage.SignupAs("nelsonnn", "nelsonnn@mail.com");
+
+            Assert.IsTrue(_signupPage.FormIsPresentSignup());
+
+            AccountCreatePage _accountCreate = _signupPage.AccountCreateAs("Mr.", "123456", "10", "June", "1986", "Nelson", "Vince", "Company", "Av. Cabildo", "Cabildo 1200", "India", "Estado de india", "Ciudad", "6500", "25412541");
+
+            Assert.IsTrue(_accountCreate.AccountCreatIsPresent());
         }
     }
 }
