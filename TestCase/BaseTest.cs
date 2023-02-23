@@ -24,7 +24,7 @@ namespace AutomationProject_02.TestCase
             Driver.Navigate().GoToUrl(url);
             Driver.Manage().Window.Maximize();
         }
-        /*
+        
         // Metodo para cerrar el navegador
         [TearDown] 
         public void AfterTest()
@@ -33,6 +33,6 @@ namespace AutomationProject_02.TestCase
             {
                Driver.Quit();
             }
-        }*/
+        }
     }
 }

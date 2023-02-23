@@ -75,7 +75,7 @@ namespace AutomationProject_02.PageObject
             return new SignupPage(Driver);
         }
 
-        // Metodo para logearse con un usuario registrado. Retorna a la pagina inicial
+        // Metodo para logearse con un usuario registrado. Retorna la pagina inicial
         public PrincipalPage LoginAs(string email, string password)
         {
             TypeEmailLogin(email);

@@ -30,7 +30,7 @@ namespace AutomationProject_02.PageObject
         protected string inputCompanyXPath = "//input[@id='company']";
         protected string inputAddressXPath = "//input[@id='address1']";
         protected string inputAddress2XPath = "//input[@id='address2']";
-        protected string selectCountryXPath = "*//select[@id='country']";
+        protected string selectCountryXPath = "//select[@id='country']";
         protected string inputStateXPath = "//input[@id='state']";
         protected string inputCityXPath = "//input[@id='city']";
         protected string inputZipCodeXPath = "//input[@id='zipcode']";
@@ -73,7 +73,7 @@ namespace AutomationProject_02.PageObject
         }
 
         // Metodo para seleccionar el dia de nacimiento
-        public void SelectBirthDaySignup(string day) //*select[@id="days"]/option[@value='2']
+        public void SelectBirthDaySignup(string day) 
         {
             Driver.FindElement(By.XPath(selectDaysXPath + "/option[@value='" + day + "']")).Click();
         }

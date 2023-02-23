@@ -16,7 +16,7 @@ namespace AutomationProject_02.TestCase
     {
         // Metodo que implementa el caso de prueba de registrarse. Resultado esperado que el usuario se redireccione al formulario de registro correctamente
         [Test]
-        public void SuccessfulSignupTest()
+        public void Test_002_SuccessfulSignup()
         {
             LoginPage signupPage = new LoginPage(Driver);
             SignupPage _signupPage = signupPage.SignupAs("nels", "nels@mail.com");
@@ -24,12 +24,12 @@ namespace AutomationProject_02.TestCase
             Assert.IsTrue(_signupPage.FormIsPresentSignup());
         }
 
-        // Metodo para crear una nueva cuenta. Retorna a la pagina cuenta creada
+        // Metodo para crear una nueva cuenta, llenando el formulario de registro. Retorna la pagina cuenta creada
         [Test]
-        public void SuccessAccountCreatTest()
+        public void Test_003_SuccessAccountCreat()
         {
             LoginPage signupPage = new LoginPage(Driver);
-            SignupPage _signupPage = signupPage.SignupAs("nelsonnn", "nelsonnn@mail.com");
+            SignupPage _signupPage = signupPage.SignupAs("nel", "nel@mail.com");
 
             Assert.IsTrue(_signupPage.FormIsPresentSignup());
 

@@ -13,7 +13,7 @@ namespace AutomationProject_02.TestCase
     {
         // Metodo que implementa el caso de prueba de registrarse. Resultado esperado que el usuario se redireccione al formulario de registro correctamente
         [Test]
-        public void SuccessfulLoginTest()
+        public void Test_001_SuccessfulLogin()
         {
             LoginPage principalPage = new LoginPage(Driver);
             PrincipalPage _principalPage = principalPage.LoginAs("testnel@mail.com", "123456");
